@@ -2,8 +2,8 @@
 require_once "../../options.php";
 
 $email_usr = $_COOKIE["email"];
-$site_usr = "iziing.io";
-$doc_user = "iziing_first";
+$site_usr = "";
+$doc_user = "";
 
 $sql = "INSERT INTO document (doc, email, site) VALUES ('$doc_usr', '$email_usr', '$site_usr')";
 
@@ -14,7 +14,7 @@ if (!$connector->connect_errno) {
 }
 
 if ($connector->query($sql)) {
-      $file = "../iZiing.pdf";
+      $file = "../";
       header('Content-Description: File Transfer');
       header('Content-Type: application/octet-stream');
       header('Content-Disposition: attachment; filename=' . basename($file));

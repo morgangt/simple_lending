@@ -1,4 +1,6 @@
 <?php
+$lang = ("en", "ru", "ch");
+$defualt_lang = "en";
 
 $host_db="localhost";
 $dbname="";

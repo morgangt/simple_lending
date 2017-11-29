@@ -1,6 +1,6 @@
 <?php
-
 require_once "options.php";
+
 $email_usr = $_POST["email"];
 $site_usr = "";
 
